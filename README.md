@@ -32,6 +32,7 @@ The columns present in the dataset are,
 2. Mean laptop price with respect to company
 
 3. Distribution of laptop prices
+<img src = "Images/Distribution of laptop price.png">
 
 # Multiple Linear Regression
 To determine the relationship between two or more independent variables and a dependent variable, utilize multiple linear regression. In this instance, we can examine how the columns are affecting the "Price" column. We can determine which factors contribute to a laptop's overall cost using this model. However, this model has limitations of its own, which is where regularized models come into play.
@@ -53,6 +54,7 @@ Below is a summary of how the models performed:
 1.	Linear Regression Model: Test set RMSE of 23993.28 and R-square of 63 percent.
 2.	Ridge Regression Model: Test set RMSE of 17056.5 and R-square of 76 percent.
 3.	Lasso Regression Model: Test set RMSE of 17183.55 and R-square of 75 percent.
+</b>
 Based on the performance of the models, it can be concluded that the Ridge regression model is the best to predict the laptop prices for this data.
 
 
