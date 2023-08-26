@@ -17,13 +17,13 @@ The columns present in the dataset are,
 12. Price :	Price of the laptop in INR
 
 # Questions
-•	What aspects affect the final cost of a laptop?
-•	Which model provides the most accurate laptop price prediction?
+-	What aspects affect the final cost of a laptop?
+-	Which model provides the most accurate laptop price prediction?
 
 # Methods performed
-•	Multiple Linear Regression
-•	Ridge Regression
-•	Lasso Regression
+-	Multiple Linear Regression
+-	Ridge Regression
+-	Lasso Regression
 
 # EDA
 
@@ -39,10 +39,20 @@ To determine the relationship between two or more independent variables and a de
 
 # Ridge Regression
 Ridge regression adds a regularization factor to the common linear regression equation to handle multicollinearity. As a penalty for high regression coefficient values, this regularization term works to reduce the coefficients towards zero and avoid overfitting.
-•	It shrinks the parameters. 
-•	It uses coefficient shrinking to lessen the complexity of the model.
+- It shrinks the parameters. 
+-	It uses coefficient shrinking to lessen the complexity of the model.
 
 # LASSO Regression
 Lasso regression is a method of regularization that is preferred over other regression techniques for more precise predictions. The approach involves shrinkage, whereby data values are pulled towards a central point, typically the mean. The lasso procedure is designed to favor simpler models that rely on fewer parameters.
-The second question that we seek to answer is which of these three models will provide us with the accurate prediction.
+
+# Conclusion
+
+In this project we have leveraged RStudio a powerful language for data analysis using statistical methods for the laptop price prediction dataset. We have also learned about the regularization technique to get around the drawbacks of the linear regression model.
+The factors that have a greater impact on the price of the laptop are ‘Ram’, ‘Cpu_speed’, ‘Memory’, and ‘Weight’.
+Below is a summary of how the models performed:
+1.	Linear Regression Model: Test set RMSE of 23993.28 and R-square of 63 percent.
+2.	Ridge Regression Model: Test set RMSE of 17056.5 and R-square of 76 percent.
+3.	Lasso Regression Model: Test set RMSE of 17183.55 and R-square of 75 percent.
+Based on the performance of the models, it can be concluded that the Ridge regression model is the best to predict the laptop prices for this data.
+
 
